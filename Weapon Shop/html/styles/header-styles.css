@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+header#header-contents {
+  background-color: rgb(182, 182, 182);
+  position: fixed;
+  top: 2px;
+  right: 10px;
+  left: 10px;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.444);
+}
+
+div.header {
+  display: flex;
+  align-items: center;
+  width: 900px;
+}
+
+div.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 60px;
+}
+
+div.shop-name-container {
+  width: 180px;
+  margin-right: 20px;
+  position: relative;
+  font-family: 'Rubik Mono One', sans-serif, Arial;
+  white-space: nowrap;
+}
+
+img.logo-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+div.home-container,
+div.about-container,
+div.facebook-link-container {
+  width: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-right: 5px;
+  background-color: rgb(145, 145, 145);
+  border-radius: 3px;
+  transition: background-color 0.15s;
+}
+
+@media (max-width: 610px) {
+  div.home-container,
+  div.about-container,
+  div.facebook-link-container {
+    margin-right: 0;
+    width: 60px;
+  }
+
+  div.shop-name-container {
+    margin-right: 0;
+  }
+
+  section#header-contents {
+    right: 0;
+    left: 0;
+  }
+}
+
+div.home-container:hover,
+div.about-container:hover,
+div.facebook-link-container:hover {
+  background-color: gray;
+}
+
+[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.4);
+  padding: 4px 4px;
+  border-radius: 3px;
+  font-size: 13px;
+  white-space: nowrap;
+}

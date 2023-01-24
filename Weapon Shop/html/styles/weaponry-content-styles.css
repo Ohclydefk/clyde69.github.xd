@@ -1,0 +1,97 @@
+section#weaponry-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 150px;
+  margin-right: 150px;
+  column-gap: 20px;
+  row-gap: 50px;
+  position: relative;
+  vertical-align: top;
+}
+
+@media (max-width: 1250px) {
+  section#weaponry-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1235.5px) {
+  section#weaponry-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 880px) {
+  section#weaponry-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 485px) {
+  section#weaponry-content div.item-container {
+    height: 350px;
+  }
+}
+
+
+div.item-container {
+  position: relative;
+  background-color: rgb(134, 134, 134);
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 290px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+div.item-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: rgba(94, 94, 94, 0.522);
+}
+
+img.item-image {
+  width: 150px;
+  height: 130px;
+  border-radius: 5px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.464);
+  transition: all 0.25s;
+}
+
+img.item-image:hover {
+  width: 170px;
+  height: 150px;
+}
+
+
+div.item-description-cotainer {
+  display: flex;
+  flex-direction: column;
+}
+
+h5.item-name {
+  margin-bottom: 7px;
+}
+
+div.item-description-cotainer p {
+  font-family: Roboto, Arial;
+  font-size: 13px;
+  color: rgb(47, 47, 47);
+  margin-bottom: 3px;
+}
+
+div.item-datail-container {
+  position: relative;
+}
+
+div.item-datail-container .tag {
+  color: rgb(49, 0, 86);
+}
